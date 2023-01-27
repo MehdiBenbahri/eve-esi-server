@@ -30,6 +30,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "form-data": "^4.0.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
     "mysequel": "^2.0.0",
     "nodemon": "^2.0.20",
     "sequelize": "^6.28.0"

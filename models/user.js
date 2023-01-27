@@ -9,13 +9,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   User.init({
-    username: DataTypes.STRING,
-    apiToken: DataTypes.STRING,
+    name: DataTypes.STRING,
+    access_token: DataTypes.STRING,
+    refresh_token: DataTypes.STRING,
+    token_exp: DataTypes.DATE,
+    sub: DataTypes.STRING,
     createdAt: DataTypes.DATE,
     updatedAt: DataTypes.DATE,
   }, {
     sequelize,
-    modelName: 'User',
+    modelName: 'user',
   });
   return User;
 };
